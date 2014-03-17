@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94C61FFD-FFDE-4EF3-955C-88F96EBCFD0B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DistObje</RootNamespace>
+    <AssemblyName>DistObje</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201403171304367_InitialCreate.cs" />
+    <Compile Include="Migrations\201403171304367_InitialCreate.Designer.cs">
+      <DependentUpon>201403171304367_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171316318_coindb.cs" />
+    <Compile Include="Migrations\201403171316318_coindb.Designer.cs">
+      <DependentUpon>201403171316318_coindb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171321176_coindb1.cs" />
+    <Compile Include="Migrations\201403171321176_coindb1.Designer.cs">
+      <DependentUpon>201403171321176_coindb1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171324014_coindb2.cs" />
+    <Compile Include="Migrations\201403171324014_coindb2.Designer.cs">
+      <DependentUpon>201403171324014_coindb2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171324164_coindb3.cs" />
+    <Compile Include="Migrations\201403171324164_coindb3.Designer.cs">
+      <DependentUpon>201403171324164_coindb3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171324548_coindb4.cs" />
+    <Compile Include="Migrations\201403171324548_coindb4.Designer.cs">
+      <DependentUpon>201403171324548_coindb4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171327359_coindb5.cs" />
+    <Compile Include="Migrations\201403171327359_coindb5.Designer.cs">
+      <DependentUpon>201403171327359_coindb5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171329325_coindb6.cs" />
+    <Compile Include="Migrations\201403171329325_coindb6.Designer.cs">
+      <DependentUpon>201403171329325_coindb6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171358124_coindb7.cs" />
+    <Compile Include="Migrations\201403171358124_coindb7.Designer.cs">
+      <DependentUpon>201403171358124_coindb7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171358438_coindb8.cs" />
+    <Compile Include="Migrations\201403171358438_coindb8.Designer.cs">
+      <DependentUpon>201403171358438_coindb8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403171359118_coindb9.cs" />
+    <Compile Include="Migrations\201403171359118_coindb9.Designer.cs">
+      <DependentUpon>201403171359118_coindb9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201403171304367_InitialCreate.resx">
+      <DependentUpon>201403171304367_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171316318_coindb.resx">
+      <DependentUpon>201403171316318_coindb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171321176_coindb1.resx">
+      <DependentUpon>201403171321176_coindb1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171324014_coindb2.resx">
+      <DependentUpon>201403171324014_coindb2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171324164_coindb3.resx">
+      <DependentUpon>201403171324164_coindb3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171324548_coindb4.resx">
+      <DependentUpon>201403171324548_coindb4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171327359_coindb5.resx">
+      <DependentUpon>201403171327359_coindb5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171329325_coindb6.resx">
+      <DependentUpon>201403171329325_coindb6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171358124_coindb7.resx">
+      <DependentUpon>201403171358124_coindb7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171358438_coindb8.resx">
+      <DependentUpon>201403171358438_coindb8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403171359118_coindb9.resx">
+      <DependentUpon>201403171359118_coindb9.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
